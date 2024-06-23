@@ -1,0 +1,9 @@
+# Ignore class files
+*.class
+
+# Ignore other files or directories you don’t want to track
+target/
+*.log
+*.tmp
+*.swp
+.DS_Store
