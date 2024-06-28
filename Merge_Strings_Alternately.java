@@ -7,6 +7,7 @@ public class Merge_Strings_Alternately {
         String word2 = sc.nextLine();
         String mergedString = mergeAlternately(word1, word2);
         System.out.println(mergedString); // Output: "apbqrs"
+        sc.close();
     }
 
     public static String mergeAlternately(String word1, String word2) {
