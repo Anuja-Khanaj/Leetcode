@@ -1,30 +1,38 @@
 import java.util.*;
 
-public class TopKFrequentElements {
+public class TopKFrequent {
     public static int[] topKFrequent(int[] nums, int k) {
         // Step 1: Count frequencies
-        Map<Integer, Integer> freqMap = new HashMap<>();
-        for (int num : nums) {
-            freqMap.put(num, freqMap.getOrDefault(num, 0) + 1);
-        }
+        // Map<Integer, Integer> freqMap = new HashMap<>();
+        // for (int num : nums) {
+        //     freqMap.put(num, freqMap.getOrDefault(num, 0) + 1);
+        // }
         
-        // Step 2: Use a Min Heap (PriorityQueue)
-        PriorityQueue<Map.Entry<Integer, Integer>> minHeap = 
-            new PriorityQueue<>((a, b) -> a.getValue() - b.getValue());  // Min Heap by frequency
+        // // Step 2: Use a Min Heap (PriorityQueue)
+        // PriorityQueue<Map.Entry<Integer, Integer>> minHeap = 
+        //     new PriorityQueue<>((a, b) -> a.getValue() - b.getValue());  // Min Heap by frequency
         
-        for (Map.Entry<Integer, Integer> entry : freqMap.entrySet()) {
-            minHeap.offer(entry);
-            if (minHeap.size() > k) {
-                minHeap.poll(); // Remove least frequent
-            }
-        }
+        // for (Map.Entry<Integer, Integer> entry : freqMap.entrySet()) {
+        //     minHeap.offer(entry);
+        //     if (minHeap.size() > k) {
+        //         minHeap.poll(); // Remove least frequent
+        //     }
+        // }
         
-        // Step 3: Extract the top K elements
-        int[] result = new int[k];
-        int index = 0;
-        while (!minHeap.isEmpty()) {
-            result[index++] = minHeap.poll().getKey();
+        // // Step 3: Extract the top K elements
+        // int[] result = new int[k];
+        // int index = 0;
+        // while (!minHeap.isEmpty()) {
+        //     result[index++] = minHeap.poll().getKey();
+        // }
+        // return result;
+
+        int result[] = new int[nums.length];
+
+        for(int i = 0 ; i < nums.length ;i++){
+
         }
+
         return result;
     }
 
