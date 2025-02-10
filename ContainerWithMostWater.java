@@ -16,7 +16,29 @@ public class ContainerWithMostWater {
             }
         }
         return maxWater;
-    }
+     }
+
+    //  static {
+    //     for (int i=0;i<500;i++) {
+    //         maxArea(new int[]{0, 0});
+    //     }
+    // }
+    // public static  int maxArea(int[] height) {
+    //     int l=0,r=height.length-1,max_area=0;
+    //     while (l<r){
+    //         int h=Math.min(height[l],height[r]);
+    //         max_area=Math.max(max_area,h*(r-l));
+    //         while(l<r && height[l]<=h)
+    //         {
+    //             l++;
+    //         }
+    //          while(l<r && height[r]<=h)
+    //         {
+    //             r--;
+    //         }
+    //     }
+    //     return max_area;
+    // }
 
     public static void main(String[] args) {
         System.out.println(maxArea(new int[]{1,8,6,2,5,4,8,3,7})); // Output: 49
